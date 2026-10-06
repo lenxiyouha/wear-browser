@@ -64,6 +64,12 @@ flutter_launcher_icons:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
+dependency_overrides:
+  # 上游 1.1.3 使用已被 AGP 9 废弃的 proguard-android.txt（构建必挂），
+  # 这里 vendor 了一份单行修复版（proguard-android-optimize.txt）
+  flutter_inappwebview_android:
+    path: third_party/flutter_inappwebview_android
+
 flutter:
 
   # The following line ensures that the Material Icons font is

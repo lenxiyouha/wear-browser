@@ -1,0 +1,4 @@
+# 第三方 vendor 目录：仅做单行 gradle 补丁，不参与本仓库的代码分析
+analyzer:
+  exclude:
+    - "**/*"
